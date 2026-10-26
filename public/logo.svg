@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="logo-gear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2" />
+      <stop offset="30%" stop-color="#0284c7" />
+      <stop offset="70%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#0c4a6e" />
+    </linearGradient>
+    <linearGradient id="logo-seven" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="40%" stop-color="#0ea5e9" />
+      <stop offset="80%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Outer Circle (Grey Q-body) -->
+  <circle
+    cx="100"
+    cy="95"
+    r="78"
+    fill="none"
+    stroke="#4b5563"
+    stroke-width="6"
+  />
+
+  <!-- ================= BACKGROUND CONTOURS (Gaps) ================= -->
+  <!-- Gear teeth contour -->
+  <g fill="#ffffff">
+    <rect x="55" y="-10" width="18" height="20" rx="4" transform="translate(88, 95) rotate(120)" />
+    <rect x="55" y="-10" width="18" height="20" rx="4" transform="translate(88, 95) rotate(145)" />
+    <rect x="55" y="-10" width="18" height="20" rx="4" transform="translate(88, 95) rotate(170)" />
+    <rect x="55" y="-10" width="18" height="20" rx="4" transform="translate(88, 95) rotate(195)" />
+    <rect x="55" y="-10" width="18" height="20" rx="4" transform="translate(88, 95) rotate(220)" />
+    <rect x="55" y="-10" width="18" height="20" rx="4" transform="translate(88, 95) rotate(245)" />
+    <rect x="55" y="-10" width="18" height="20" rx="4" transform="translate(88, 95) rotate(270)" />
+    <rect x="55" y="-10" width="18" height="20" rx="4" transform="translate(88, 95) rotate(295)" />
+  </g>
+
+  <!-- Gear body contour -->
+  <path
+    d="M 73.5,149 A 56,56 0 1,1 111.7,44.3"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="26"
+    stroke-linecap="round"
+  />
+
+  <!-- G shape contour -->
+  <path
+    d="M 113,75 A 32,32 0 1,0 113,115 L 113,95 L 88,95"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="26"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+
+  <!-- "7" Main body contour -->
+  <path
+    d="M 94,54 L 150,54 L 142,72 L 110,148 L 92,148 L 124,72 L 94,72 Z"
+    fill="#ffffff"
+    stroke="#ffffff"
+    stroke-width="12"
+    stroke-linejoin="round"
+  />
+
+  <!-- "7" Leg contour -->
+  <path
+    d="M 120,110 L 136,110 L 156,148 L 140,148 Z"
+    fill="#ffffff"
+    stroke="#ffffff"
+    stroke-width="12"
+    stroke-linejoin="round"
+  />
+
+  <!-- ================= ACTUAL BLUE BRAND SHAPES ================= -->
+  <!-- Gear teeth -->
+  <g>
+    <rect x="58" y="-6" width="10" height="12" rx="2" transform="translate(88, 95) rotate(120)" fill="url(#logo-gear)" />
+    <rect x="58" y="-6" width="10" height="12" rx="2" transform="translate(88, 95) rotate(145)" fill="url(#logo-gear)" />
+    <rect x="58" y="-6" width="10" height="12" rx="2" transform="translate(88, 95) rotate(170)" fill="url(#logo-gear)" />
+    <rect x="58" y="-6" width="10" height="12" rx="2" transform="translate(88, 95) rotate(195)" fill="url(#logo-gear)" />
+    <rect x="58" y="-6" width="10" height="12" rx="2" transform="translate(88, 95) rotate(220)" fill="url(#logo-gear)" />
+    <rect x="58" y="-6" width="10" height="12" rx="2" transform="translate(88, 95) rotate(245)" fill="url(#logo-gear)" />
+    <rect x="58" y="-6" width="10" height="12" rx="2" transform="translate(88, 95) rotate(270)" fill="url(#logo-gear)" />
+    <rect x="58" y="-6" width="10" height="12" rx="2" transform="translate(88, 95) rotate(295)" fill="url(#logo-gear)" />
+  </g>
+
+  <!-- Gear body -->
+  <path
+    d="M 73.5,149 A 56,56 0 1,1 111.7,44.3"
+    fill="none"
+    stroke="url(#logo-gear)"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+
+  <!-- G shape -->
+  <path
+    d="M 113,75 A 32,32 0 1,0 113,115 L 113,95 L 88,95"
+    fill="none"
+    stroke="url(#logo-gear)"
+    stroke-width="14"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+
+  <!-- Inner highlight arc inside gear -->
+  <path
+    d="M 115,95 A 44,44 0 1,0 88,139"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="2.5"
+    opacity="0.55"
+    stroke-linecap="round"
+  />
+
+  <!-- "7" Main body -->
+  <path
+    d="M 94,54 L 150,54 L 142,72 L 110,148 L 92,148 L 124,72 L 94,72 Z"
+    fill="url(#logo-seven)"
+  />
+
+  <!-- "7" Leg -->
+  <path
+    d="M 120,110 L 136,110 L 156,148 L 140,148 Z"
+    fill="url(#logo-seven)"
+  />
+
+  <!-- White dots on the stem of the "7" -->
+  <g fill="#ffffff">
+    <circle cx="131" cy="82" r="3.5" />
+    <circle cx="123" cy="97" r="3.5" />
+    <circle cx="115" cy="112" r="3.5" />
+    <circle cx="107" cy="127" r="3.5" />
+    <circle cx="99" cy="142" r="3.5" />
+  </g>
+</svg>
